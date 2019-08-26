@@ -496,7 +496,7 @@ if (!this.props.coverScreen) return content;
         this.setState({});
         this.animateOpen();
         if(this.props.backButtonClose && Platform.OS === 'android') BackButton.addEventListener('hardwareBackPress', this.onBackPress)
-        delete this.onViewLayoutCalculated;
+        // delete this.onViewLayoutCalculated;
       };
       this.setState({isAnimateOpen : true});
     }
